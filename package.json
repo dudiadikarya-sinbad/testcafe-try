@@ -1,0 +1,19 @@
+{
+  "name": "testcafe-try",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dudiadikarya-sinbad/testcafe-try.git"
+  },
+  "author": "Dudi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dudiadikarya-sinbad/testcafe-try/issues"
+  },
+  "homepage": "https://github.com/dudiadikarya-sinbad/testcafe-try#readme"
+}
