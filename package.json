@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/dudiadikarya-sinbad/testcafe-try#readme",
   "devDependencies": {
-    "testcafe": "^1.9.4"
+    "testcafe": "^1.9.4",
+    "dotenv": "^7.0.0"
   }
 }

@@ -1,13 +1,17 @@
-import { Selector } from 'testcafe'
+import { Selector, Role } from 'testcafe'
+import page from '../page/stores/access_add_store_page.js'
+import roles from '../helper/ssc_accounts.js'
 
 fixture('testcafe try')
-    .page `https://www.google.com`
+    .page `https://seller-stg.sinbad.web.id/`
+    .beforeEach(async t =>{
+        await t
+            .useRole(roles.adminLakme)
+    });
 
-test('Test 1st Try', async t => {
-    const inputSearch = Selector('input[name="q"]')
+test('As an Admin, I want to access Add Store Page', async t => {
+    await page
+        .addStore()
     await t
-        .typeText(inputSearch, 'TestCafe')
-        .click('input[name="btnK"]')
-        .expect(inputSearch.value).contains('TestCafe', 'Success')
-
+        .expect(Selector('span').withExactText('Store Information').exists).ok()
 });
