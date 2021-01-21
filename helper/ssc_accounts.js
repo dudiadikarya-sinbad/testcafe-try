@@ -2,9 +2,6 @@ import { Role, Selector } from 'testcafe';
 const env = require('dotenv').config();
 
 const ssc_staging = process.env.BASE_URL_STG
-const inputUsername = Selector('input[id="mat-input-0"]')
-const inputPassword = Selector('input[id="mat-input-1"]')
-const submitButton = Selector('button').withText("LOGIN")
 const trsUsername = process.env.TRS_USERNAME;
 const trsPassword = process.env.TRS_PASSWORD;
 const lakemUsername = process.env.LAKME_USERNAME;
